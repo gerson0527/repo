@@ -1,0 +1,229 @@
+div.ms-Grid-row:before {
+    display: none;
+}
+
+.ms-Button-flexContainer {
+
+    display: flex;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    margin: 0 auto;
+    justify-items: center;
+	align-content: center;
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.ms-Button.icon-96.ms-Button--action.ms-Button--command[class*="root-"]:hover {
+    color: #212529 !important;
+}
+/*
+#root > div > div.ms-Grid > div > div.ms-Grid-col.ms-u-sm8 > div:nth-child(1) > div.card > div:nth-child(2) > div.ms-Grid-col.ms-sm9.ms-md10.ms-lg9 > div > div > div > div > div.ms-OverflowSet.ms-CommandBar-primaryCommand.primarySet-102 > div.ms-OverflowSet-overflowButton.overflowButton-104 > button {
+	align-self: center;
+}
+*/
+#root > div > div.ms-Grid > div > div.ms-Grid-col.ms-u-sm8 > div:nth-child(1) > div.card > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(3) > button > span,
+
+
+.ms-Stack {
+	align-items: center;
+}
+
+.ms-Grid-col {
+     position: relative;
+     min-height: 1px;
+     padding-left: 8px;
+     padding-right: 8px;
+     box-sizing: border-box;
+     width: 100%;
+      }
+ 
+
+.ms-Grid-row .card-grid{
+    display: grid!important;
+}
+
+@media screen and (max-width: 769px) {
+	.ms-Grid-row {
+		display:contents;
+	}
+}
+
+
+.ms-Button-flexContainer {
+    align-items: center;
+}
+
+.ms-Grid-row .card-grid{
+    display: grid!important;
+}
+
+
+.command-bar-1 > div > div > [class*="ms-CommandBar"] [class*="ms-CommandBar-primaryCommand"] > [class*="ms-OverflowSet-item"] > [class*="ms-Button--commandBar"] [class*="ms-Button-flexContainer"],
+
+[class*="ms-CommandBar-secondaryCommand"] > [class*="ms-OverflowSet-item"] > [class*=" ms-Button--commandBar"] > [class*="ms-Button-flexContainer"] 
+
+{
+	display: flex !important;
+	color: white;
+}
+
+[class*="ms-Button ms-Button--commandBar ms-Button--hasMenu ms-CommandBar-overflowButton"], 
+
+[class*="root"]
+
+{
+	background-color: transparent !important;
+    user-select: auto !important;
+    
+}
+
+
+[class*="root"]:hover  .ms-Button-menuIcon {
+	background-color: transparent !important;
+    user-select: auto !important;
+}
+
+
+@media (min-height: 480px){
+.commands-334 {
+    position: inherit!important;
+    top: 0px;
+    z-index: 1;
+}
+}
+
+@media (min-height: 319px){
+    .ms-Panel-footer{
+        position: inherit!important;
+        top: 0px;
+        z-index: 1;
+    }
+    }
+
+    #root > div > div.ms-Grid > div > div.ms-Grid-col.ms-u-sm8 > div:nth-child(1) > div.card > div:nth-child(2) > div.ms-Grid-col.ms-sm9.ms-md10.ms-lg9 > div > div > div > div > div.ms-OverflowSet.ms-CommandBar-primaryCommand.primarySet-102 > div.ms-OverflowSet-overflowButton.overflowButton-104{
+        background-color: transparent;
+    }
+
+    .navbar > div > div >[class*="navbar-toggler"] >  [class*="collapse"] > [class*="container-fluid"] >[class*="sede-electronica"] > [class*="root"] > [class*="div-loader"] > [class*="ms-Grid"] > [class*="ms-Grid-row"] {
+        display: flex;
+        user-select: auto !important;
+    }
+     
+    #root > div > div.ms-Grid > div{
+        display: flex;
+    }
+   
+    .ms-Grid-col.ms-u-sm12 {
+        margin-top: 10px !important;
+        margin-bottom: 3px !important;
+        padding-top: 0px !important;
+        align-items: center;
+        overflow: hidden;
+    }
+    /*
+    #root > div > div.ms-Grid > div > div.ms-Grid-col.ms-u-sm8 > div.ms-Grid > div:nth-child(12) > div > button.ms-Button.ms-Button--primary.root-142 > span{
+		height: 100%;
+	}
+*/
+    @media screen and (max-width: 767px) {
+        .ms-Button.ms-Button--primary {
+            border: none !important;
+            margin-block: 5px !important;
+            width: 100%
+        }
+        #root > div > div.ms-Grid > div > div.ms-Grid-col.ms-u-sm8 > div.ms-Grid > div:nth-child(5) > div > a{
+            width: 100%!important;
+           
+        }
+        
+        #root > div > div.ms-Grid > div > div.ms-Grid-col.ms-u-sm8 > div.ms-Grid > div:nth-child(6) > div > button{
+            margin-top: 15px!important;
+        }
+       
+        .ms-u-sm2 {
+            width: 100%!important;
+        }
+        .ms-u-sm4 {
+            width: 100%!important;
+        }
+        .ms-sm8 {
+             width: 100%!important; 
+        }
+        .ms-Button.ms-Button--default {
+            width: 100%;
+        }
+        }
+    
+        @media screen and (max-width: 768px) {
+            .ms-Grid-row{
+                display: block!important;
+            }
+            .ms-u-sm2 {
+                width: 100%!important;
+            }
+            .ms-u-sm4 {
+                width: 100%!important;
+            }
+            .ms-u-sm6 {
+                width: 100%!important;
+            }
+            
+        }
+      
+        .ms-lg6 {
+            width: 100%!important;
+        }
+    
+    .ms-Grid-row {
+        display: flex;
+    }
+
+    .ms-Grid-col > .ms-Grid > .ms-Grid-row > .ms-Grid-row {
+        display: flex!important;
+    }
+    /*
+    #root > div > div.ms-Grid > div > div.ms-Grid-col.ms-u-sm8 > div.ms-Grid > div:nth-child(2), #root > div > div.ms-Grid > div > div.ms-Grid-col.ms-u-sm8 > div.ms-Grid > div:nth-child(3){
+        display: grid;
+        
+    }
+    */
+   /*
+    [class*="ms-Panel-contentInner"]{
+        display: block!important;
+    }
+    
+    
+    [class*="ms-Panel-content"] {
+        display: grid;
+    }
+    */
+    .ms-Panel-content > .ms-Grid-row {
+        display: inherit ;
+    }
+    
+    .ms-Grid-row .card-grid > button {
+        display: block;
+    }
+       
+    .ms-Grid-row .card-grid > button > .ms-Button-flexContainer {
+        display: block;
+    }
+   
+

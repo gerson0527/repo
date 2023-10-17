@@ -1,0 +1,751 @@
+/* Header */
+
+body,
+div,
+select,
+input,
+textarea,
+button,
+span {
+    /*
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;*/
+
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#homeMDN_body {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.header-govco {
+    background: #3366CC;
+    padding: 10px 60px 10px 60px;
+}
+
+.header-govco>img {
+    height: 20px;
+    vertical-align: middle;
+    border: 0;
+}
+
+.tool_area {
+    position: relative;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tool_area div {
+    display: flex;
+}
+
+.tool_area .logo img {
+    max-width: 200px;
+    margin-right: 90px
+}
+
+
+.tool_area .titulo {
+    color: rgb(78, 78, 78);
+    font-size: 1.375rem;
+    margin-left: 90px;
+    font-weight: bold;
+}
+
+.rs_icon img {
+    height: 39px;
+    margin-left: 10px;
+}
+
+#redes_container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* menu */
+
+#cssmenu ul {
+    list-style: none;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu>li {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.menu li a {
+    color: #4E4E4E;
+    transition: all 0.5s;
+}
+
+.menu li a {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: margin 0.5s ease 0s;
+}
+
+.menu li a:before {
+    bottom: 100%;
+    transform-origin: right;
+}
+
+.menu li a:after,
+.menu li a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #3A66C9;
+    transform: scaleX(0);
+}
+
+#cssmenu ul {
+    list-style: none;
+}
+
+
+/* Nav */
+
+.navbar {
+    border-top: 1px solid #4E4E4E;
+    border-bottom: 1px solid #4E4E4E;
+    margin: 10px auto 0;
+    width: 100%;
+    padding: 0px;
+}
+
+.nav-link {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li.nav-item.dropdown.blue-background:hover {
+    color: #4e4e4e !important;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.scroll-menu {
+    width: inherit;
+}
+
+.dropdown-item {
+    font-size: 0.8125rem;
+    overflow-wrap: break-word !important;
+    white-space: normal;
+    display: block;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-decoration: none;
+}
+
+#navbarDropdownMenuLink {
+    padding: 10px 20px
+}
+
+.dropdown-item:hover {
+    color: rgb(58, 102, 201);
+}
+
+.dropdown-item:active {
+    background-color: transparent;
+}
+
+.dropdown-menu.scroll-menu.overflow-auto::-webkit-scrollbar {
+    width: 10px !important;
+    background-color: #0164c1 !important;
+}
+
+.dropdown-menu.scroll-menu.overflow-auto::-webkit-scrollbar-thumb {
+    background-color: #0164c1;
+    background-image: -webkit-gradient( linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, transparent), to(transparent));
+}
+
+.dropdown-menu.scroll-menu.overflow-auto::-webkit-scrollbar-track {
+    background-color: #0164c1;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(58, 102, 201);
+}
+
+/* CommandBar section */
+
+.command-bar-1, .ms-CommandBar {
+    background-color: #0164c1 !important;
+}
+
+.command-bar-1 button.ms-CommandBarItem-link:enabled {
+        background-color: #0164c1 !important;
+}
+
+.command-bar-1 button.ms-CommandBarItem-link:hover, .ms-CommandBarItem:hover, .ms-CommandBarItem-text:hover {
+        background-color: #0056a7 !important;
+}
+
+.ms-Button.ms-Button--primary {
+    background-color: #0164c1 !important;
+}
+
+.ms-Button.ms-Button--primary:hover {
+    background-color: #0056a7 !important;
+}
+
+/* Footer */
+
+.row_MDN {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+#enlaces {
+    margin: 40px 5px 5px 0;
+}
+
+#enlaces .mg-b {
+    margin-bottom: 20px;
+}
+
+#enlaces .row {
+    display: block;
+    /*
+    width: 100%;
+*/
+}
+
+#enlaces div.row.mg-b div {
+    vertical-align: top;
+}
+
+#enlaces .row div {
+    display: inline-block;
+}
+
+#enlaces .logo {
+    width: 24%;
+    text-align: center;
+    position: relative;
+}
+
+#enlaces .logo img {
+    margin: auto;
+    width: 70%;
+}
+
+#enlaces .ministerios ul {
+    margin: 0 30px;
+}
+
+#enlaces ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#enlaces .ministerios li::before {
+    content: "?";
+    /*
+    color: rgb(84, 84, 84);
+    */
+    color: FFB527 ;
+    font-size: 1.875rem;
+    line-height: 10px;
+}
+
+#enlaces .ministerios div.li-item {
+    display: inline;
+    position: relative;
+    top: -5px;
+}
+
+#enlaces .ministerios a {
+    font-size: 0.75rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#enlaces li a {
+    position: relative;
+    left: 15px;
+    margin-left: -8px;
+}
+
+#enlaces .enlaces {
+    background-color: #4c88b4;
+    height: auto;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+#enlaces .border-cont {
+    margin-top: 3px;
+    border-top: 1.5px solid #FFB527;
+    margin-bottom: 10px;
+}
+
+#enlaces .item-l,
+#enlaces .item-c,
+#enlaces .item-r {
+    width: 33%;
+}
+
+#enlaces .enlaces .item-l div.border-item {
+    margin-left: 35px;
+}
+
+#enlaces div.title {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid #FFB527;
+    width: 100%;
+}
+
+#enlaces .enlaces label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#enlaces label.title {
+    font-size: 1.1875rem;
+    /*
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    */
+    font-family: 'Montserrat', sans-serif;
+}
+
+#enlaces .contenido {
+    font-size: 0.75rem;
+    line-height: 18px;
+    margin-top: 10px;
+    /*
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;*/
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+#enlaces .enlaces a {
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    text-decoration: none;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+    display: block !important;
+}
+
+#enlaces .enlaces a {
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    text-decoration: none;
+}
+
+.red-item.facebook {
+    background-image: url(https://www.mindefensa.gov.co/mdn.gov~bann_enl/images/facebook.png);
+}
+
+.red-item.twitter {
+    background-image: url(https://www.mindefensa.gov.co/mdn.gov~bann_enl/images/twitter.png);
+}
+
+.red-item.instagram {
+    background-image: url(https://www.mindefensa.gov.co/mdn.gov~bann_enl/images/instagram.png);
+}
+
+.red-item.youtube {
+    background-image: url(https://www.mindefensa.gov.co/mdn.gov~bann_enl/images/youtube.png);
+}
+
+.red-item.mail {
+    background-image: url(https://www.mindefensa.gov.co/mdn.gov~bann_enl/images/mail.png);
+}
+
+.red-item.web {
+    background-image: url(https://www.mindefensa.gov.co/mdn.gov~bann_enl/images/owaCorreo.png);
+}
+
+.redes-sociales .red-item {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+}
+
+#enlaces .enlaces .item-c div.border-item,
+#enlaces .enlaces .item-r div.border-item {
+    margin-left: 10px;
+}
+
+#enlaces .enlaces div {
+    vertical-align: top;
+}
+
+#enlaces .enlaces ul {
+    width: 98%;
+    vertical-align: top;
+}
+
+#enlaces .enlaces li::before {
+    content: "â?¢";
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    line-height: 12px;
+    position: relative;
+    top: 2px;
+}
+
+#enlaces div.li-item {
+    display: inline;
+}
+
+#enlaces .enlaces .item-r div.border-item {
+    margin-right: 45px;
+}
+
+#enlaces .item-r .contenido {
+    display: block;
+    width: 100%;
+}
+
+#enlaces div.select {
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    width: 100%;
+}
+
+#enlaces select {
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-appearance: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 15px;
+    overflow: scroll;
+    background-color: white;
+}
+
+#enlaces div.sel-option {
+    background-color: #324158;
+    min-height: 28px;
+    max-height: 28px;
+    min-width: 28px;
+    border-radius: 28px;
+    margin: auto 0;
+    background-image: url(https://www.mindefensa.gov.co/mdn.gov~bann_enl/images/right.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+#enlaces div.select:after {
+    content: '';
+    background-image: url(https://www.mindefensa.gov.co/mdn.gov~bann_enl/images/down.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+    right: 50px;
+    width: 8px;
+}
+
+.sel-option {
+    cursor: pointer;
+}
+
+.dropdown-item:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px rgb(58, 102, 201);
+    transform: scaleX(0);
+    transition: transform 350ms ease-in-out;
+}
+
+.dropdown-item:hover:after {
+    transform: scaleX(1);
+}
+
+.dropdown-item:after {
+    transform-origin: 0% 50%;
+}
+
+.dropdown-item:before {
+    display: block;
+    content: '';
+    border-bottom: solid 3px rgb(58, 102, 201);
+    transform: scaleX(0);
+    transition: transform 350ms ease-in-out;
+}
+
+.dropdown-item:hover:before {
+    transform: scaleX(1);
+}
+
+.dropdown-item:before {
+    transform-origin: 100% 50%;
+}
+
+
+/* Content Area */
+
+.solid_blue {
+    background-color: #2D5BC1;
+    padding: 30px;
+    margin: 30px 0px;
+}
+
+.header_title {
+    color: #ffffff;
+}
+
+.header_text {
+    color: #ffffff;
+}
+
+.card_row {
+    margin: 0;
+}
+
+.card-row_center {
+    justify-content: center;
+}
+
+.card-home>img {
+    max-height: 16em;
+    object-fit: cover;
+}
+
+.card-home {
+    width: 40%;
+}
+
+.left_card {
+    margin-right: 5em;
+}
+
+.main_cta {
+    text-align-last: end;
+    align-self: flex-end;
+}
+
+.btn-light {
+    margin-bottom: 15px;
+}
+
+
+/* Smartphones (portrait) */
+
+@media only screen and (max-width: 375px) {}
+
+
+/* iPads (portrait) */
+
+@media only screen and (max-width: 835px) {
+    #homeMDN_body {
+        width: auto;
+    }
+    .header-govco {
+        width: 100%;
+    }
+    .tool_area {
+        display: block;
+        margin: 0 auto;
+    }
+    .tool_area .logo img {
+        /*
+        max-width: 100%;
+        */
+        margin-top: 4px;
+    }
+    #homeMDN_body>div.tool_area>div.titulo {
+        margin: 0 auto;
+        text-align: center;
+        width: fit-content;
+    }
+    #homeMDN_body>div.tool_area>div.logo {
+        width: 100%;
+    }
+    #redes_container {
+        margin: 0 auto;
+    }
+    #enlaces .logo {
+        width: 100%;
+    }
+    /*
+    #enlaces .logo img {
+        width: 100%;
+    }
+    */
+    #enlaces,
+    div.row.mg-b {
+        margin: 0;
+    }
+    #enlaces .ministerios {
+        margin-top: 10px;
+        text-align: center;
+        width: inherit;
+    }
+    #enlaces .ministerios ul {
+        margin: 0 10px;
+        text-align: left;
+    }
+    .row.enlaces {
+        margin: 0;
+    }
+    #enlaces .item-l,
+    #enlaces .item-c,
+    #enlaces .item-r {
+        width: 100%;
+    }
+    #enlaces .enlaces div.border-item {
+        margin-left: 15px !important;
+    }
+    #enlaces .enlaces .border-item .contenido {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #homeMDN_body>div.tool_area>div.logo>a {
+        margin: 0 auto;
+    }
+    .rs_icon {
+        margin: 0 auto;
+    }
+}
+
+
+/* Desktops and laptops */
+
+@media only screen and (min-width: 1224px) {}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1824px) {}
+
+
+/* Media queries area */
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 768px) {
+    .he_menu .nav {
+        display: none;
+    }
+    .navbar {
+        padding: 0.8rem 0.5rem;
+    }
+    .left_card {
+        margin-right: auto;
+    }
+    .card-home {
+        width: auto;
+    }
+}
+
+   .mdn-enlaces-ministerios-cont {
+      display: flex;
+      max-width: 1360px;
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 16px;
+   }
+
+   .mdn-enlaces-ministerios-left,
+   .mdn-enlaces-ministerios-center,
+   .mdn-enlaces-ministerios-right {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 10%;
+   }
+
+   .mdn-enlaces-ministerios-center {
+      width: 80%;
+   }
+
+   .mdn-enlaces-ministerios-right {
+      width: 10%;
+   }
+
+   .mdn-enlaces-ministerios-left img,
+   .mdn-enlaces-ministerios-right img {
+      width: 100%;
+   }
+
+   .mdn-enlaces-ministerios-left img:hover,
+   .mdn-enlaces-ministerios-right img:hover {
+      opacity: 0.8;
+   }
+
+   .mdn-enlaces-ministerios-items {
+      list-style: none;
+      column-count: 5;
+      column-gap: 50px;
+      margin: 10px 0;
+   }
+
+   .mdn-enlaces-ministerios-item a {
+      text-decoration: none;
+      color: #154A8A;
+   }
+
+   .mdn-enlaces-ministerios-item:before {
+      content: "\2022";
+      color: #FFB527;
+   }
+
+   .mdn-enlaces-ministerios-center {
+    width: 80%;
+}
+.mdn-enlaces-ministerios-cont {
+    display: flex;
+    max-width: 1360px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.mdn-pie-pagina-titulo {
+    font-size: 20px;
+    text-underline-offset: 10px;
+    text-decoration: underline;
+    text-decoration-color: #FFB527;
+    text-decoration-thickness: 1px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
