@@ -7,32 +7,50 @@ const VerificacionDocumentos = () => {
   const [param3, setParam3] = useState('');
   const [param4, setParam4] = useState('');
   const [param5, setParam5] = useState('');
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Obtiene la URL actual
+    // Obtiene la URL actual y procesa los parámetros
     const currentUrl = window.location.href;
-    // Divide la URL en partes usando '/' como separador
-    const parts = currentUrl.split('/verify-document/');      
-    // Obtiene la última parte, que son los parámetros separados por '-'
-    const paramPart = parts[parts.length - 1];    
-    // Divide los parámetros por '-' y asigna a los estados correspondientes
-    const params = paramPart.split('-document-');   
-    if (params.length >= 1) {
-      setParam1(params[0]);
-    }
-    if (params.length >= 2) {
-      setParam2(params[1]);
-    }
-    if (params.length >= 3) {
-      setParam3(params[2]);
-    }
-    if (params.length >= 4) {
-      setParam4(params[3]);
-    }
-    if (params.length >= 5) {
-      setParam5(params[4]);
-    }
+    const parts = currentUrl.split('/');
+    const paramPart = parts[parts.length - 1];
+    const params = paramPart.split('-');
+    if (params.length >= 1) setParam1(params[0]);
+    if (params.length >= 2) setParam2(params[1]);
+    if (params.length >= 3) setParam3(params[2]);
+    if (params.length >= 4) setParam4(params[3]);
+    if (params.length >= 5) setParam5(params[4]);
   }, []);
+
+  const handleVerificarClick = () => {
+    // Valida que los parámetros no estén vacíos
+    if (!param1 || !param2 || !param3 || !param4 || !param5) {
+      alert('Debe ingresar todos los parámetros');
+      return;
+    }
+
+    // Construye la URL con los parámetros en la ruta de la solicitud
+    const url = `/verify-document/${param1}-${param2}-${param3}-${param4}-${param5}`;
+
+    // Realiza una solicitud GET al servidor Express.js
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('La solicitud falló');
+        }
+        return response.json();
+      })
+      .then((result) => {
+        setData(result);
+        setError(null);
+      })
+      .catch((error) => {
+        setError('Error al obtener los datos');
+        console.error(error);
+      });
+  };
+
   return (
         <div style={{ padding: "10px" }}>
           <div style={{ padding: "10px" }}>
@@ -150,6 +168,7 @@ const VerificacionDocumentos = () => {
                           type="button"
                           className="ms-Button ms-Button--primary root-110"
                           data-is-focusable="true"
+                          onClick={handleVerificarClick}
                         >
                           <span
                             className="ms-Button-flexContainer flexContainer-111"
