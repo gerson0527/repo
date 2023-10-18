@@ -2,37 +2,37 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { TextField, PrimaryButton } from '@fluentui/react';
 const VerificacionDocumentos = () => {
-    const [parametros, setParametros] = useState({
-        param1: '',
-        param2: '',
-        param3: '',
-        param4: '',
-        param5: ''
-      });
-    
-      useEffect(() => {
-        // Realizar una solicitud GET a tu API
-        fetch('/verify-document/:param1-:param2-:param3-:param4-:param5', {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-          }
-        })
-          .then(response => response.json())
-          .then(data => {
-            // Actualizar el estado con los parámetros obtenidos
-            setParametros({
-              param1: data.param1,
-              param2: data.param2,
-              param3: data.param3,
-              param4: data.param4,
-              param5: data.param5
-            });
-          })
-          .catch(error => {
-            console.error('Error al obtener los parámetros:', error);
-          });
-      }, []);
+  const [param1, setParam1] = useState('');
+  const [param2, setParam2] = useState('');
+  const [param3, setParam3] = useState('');
+  const [param4, setParam4] = useState('');
+  const [param5, setParam5] = useState('');
+
+  useEffect(() => {
+    // Obtiene la URL actual
+    const currentUrl = window.location.href;
+    // Divide la URL en partes usando '/' como separador
+    const parts = currentUrl.split('/verify-document/');      
+    // Obtiene la última parte, que son los parámetros separados por '-'
+    const paramPart = parts[parts.length - 1];    
+    // Divide los parámetros por '-' y asigna a los estados correspondientes
+    const params = paramPart.split('-document-');   
+    if (params.length >= 1) {
+      setParam1(params[0]);
+    }
+    if (params.length >= 2) {
+      setParam2(params[1]);
+    }
+    if (params.length >= 3) {
+      setParam3(params[2]);
+    }
+    if (params.length >= 4) {
+      setParam4(params[3]);
+    }
+    if (params.length >= 5) {
+      setParam5(params[4]);
+    }
+  }, []);
   return (
         <div style={{ padding: "10px" }}>
           <div style={{ padding: "10px" }}>
@@ -57,41 +57,46 @@ const VerificacionDocumentos = () => {
                       <div className="ms-Grid-col">
                         <TextField
                           placeholder=""
-                          maxLength={8}
+                          maxLength={10}
                           ariaLabel=""
-                          defaultValue={parametros.param1}
+                          value={param1}
+                          onChange={(e) => setParam1(e.target.value)}
                         />
                       </div>
                       <div className="ms-Grid-col">
                         <TextField
                           placeholder=""
-                          maxLength={8}
+                          maxLength={10}
                           ariaLabel=""
-                          defaultValue={parametros.param2}
+                          value={param2}
+                          onChange={(e) => setParam2(e.target.value)}
                         />
                       </div>
                       <div className="ms-Grid-col">
                         <TextField
                           placeholder=""
-                          maxLength={8}
+                          maxLength={10}
                           ariaLabel=""
-                          defaultValue={parametros.param3}
+                          value={param3}
+                          onChange={(e) => setParam3(e.target.value)}
                         />
                       </div>
                       <div className="ms-Grid-col">
                         <TextField
                           placeholder=""
-                          maxLength={8}
+                          maxLength={10}
                           ariaLabel=""
-                          defaultValue={parametros.param4}
+                          value={param4}
+                          onChange={(e) => setParam4(e.target.value)}
                         />
                       </div>
                       <div className="ms-Grid-col">
                         <TextField
                           placeholder=""
-                          maxLength={8}
+                          maxLength={10}
                           ariaLabel=""
-                          defaultValue={parametros.param5}
+                          value={param5}
+                          onChange={(e) => setParam5(e.target.value)}
                         />
                       </div>
                     </div>
