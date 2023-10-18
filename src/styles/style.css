@@ -264,7 +264,7 @@ li.nav-item.dropdown.blue-background:hover {
 }
 
 #enlaces .ministerios li::before {
-    content: "?";
+    content: "â€¢";
     /*
     color: rgb(84, 84, 84);
     */
@@ -407,7 +407,7 @@ li.nav-item.dropdown.blue-background:hover {
 }
 
 #enlaces .enlaces li::before {
-    content: "â?¢";
+    content: "â€¢";
     color: rgb(255, 255, 255);
     font-size: 1.25rem;
     line-height: 12px;
@@ -748,4 +748,9 @@ li.nav-item.dropdown.blue-background:hover {
     text-decoration-thickness: 1px;
     font-weight: 700;
     margin-bottom: 20px;
+}
+/* Cambia el ancho de los elementos que tienen clase ms-Grid-col */
+.ms-Grid-col {
+  width: 76%;
+  margin: 0 auto; /* O el ancho que desees */
 }
